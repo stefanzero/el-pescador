@@ -1,0 +1,131 @@
+
+header{
+    text-align: center;
+    background-color: lightyellow;
+    background-image: url('toto\ la\ momposina\ black\ and\ white.avif');
+    padding: 30px;
+    margin: 0%;
+    border-radius: 10px;
+}
+h1 {
+    color:rgb(245, 189, 48);
+    text-shadow: -2px -2px 0 rgb(135, 132, 132),  /* Top-left shadow */
+    2px -2px 0  rgb(135, 132, 132),   /* Top-right shadow */
+    -2px 2px 0 rgb(135, 132, 132),   /* Bottom-left shadow */
+    2px 2px 0 rgb(135, 132, 132);   ;
+    text-align: center;
+    size: 400px;
+    font-size: 60px;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 0;
+    margin-top: 60px;
+   
+}
+h2{
+     color: rgb(245, 189, 48);
+    size: 24px;
+    font-family: 'Nunito', sans-serif;
+
+        text-shadow: -2px -2px 0 rgb(135, 132, 132),  /* Top-left shadow */
+    2px -2px 0  rgb(135, 132, 132),   /* Top-right shadow */
+    -2px 2px 0 rgb(135, 132, 132),   /* Bottom-left shadow */
+    2px 2px 0 rgb(135, 132, 132);   ; 
+    text-align: center;
+}
+h3{
+    color: rgb(202, 137, 111);
+    size: 24px;
+    font-size: 28px;
+    font-family: 'Nunito', sans-serif;;
+}
+ h4 {
+    color: darkslateblue;
+    text-align: center;
+    size: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+p {
+    color: darkcyan;
+    text-align: center;
+    size: 16px;
+    font-family: 'Nunito', sans-serif;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+
+}
+a {
+    text-align: center;
+    color: rgb(214, 137, 42);
+    font-family: 'nunito', sans-serif;
+    size: 14px;
+    margin: auto;
+    
+}
+
+
+body {
+    background-color: lightgoldenrodyellow;
+}
+footer {
+    text-align: center;
+    font-size: 12px;
+    color: greenrey;
+}
+.Column {
+    float: left;
+    width: 33.3%;
+    padding: 100px;
+    box-sizing: border-box;
+    text-align: center;
+    
+}
+.artist-info{
+    text-align: center;
+    background-color: lightyellow;
+    padding-top: 0%;
+    padding: 30px;
+    margin: 0p;
+    border-radius: 10px;
+    font-family: 'nunito', sans-serif;
+}
+.lyrics {
+    text-align: center;
+    background-color: lightyellow;
+    padding: 20px;
+    margin: 0px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.streaming-links {
+    text-align: center;
+    background-color: lightyellow;
+    padding: 20px;
+    margin: 0px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.song-info{
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 5px;
+    font-size: 20px;
+    
+}
+img{
+    border-radius: 10px;
+    width: 250px;
+    height: auto;
+}
+footer{
+  p{
+    color: darkcyan;
+    text-align: center;
+    size: 20px;
+    font-family: 'Nunito', sans-serif;
+  }
+}
