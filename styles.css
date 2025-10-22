@@ -1,131 +1,165 @@
-
-header{
-    text-align: center;
-    background-color: lightyellow;
-    background-image: url('toto\ la\ momposina\ black\ and\ white.avif');
-    padding: 30px;
-    margin: 0%;
-    border-radius: 10px;
+:root {
+  --header-color-1: rgb(245, 189, 48);
+  --header-color-2: rgb(245, 189, 48);
+  --header-color-3: rgb(202, 137, 111);
+  --header-color-4: darkslateblue;
+  --link-color: rgb(214, 137, 42);
+  --p-color: darkcyan;
+  --body-background-color: lightgoldenrodyellow;
+  --panel-background-color: lightyellow;
+  --iframe-background-color: #9c1914;
 }
-h1 {
-    color:rgb(245, 189, 48);
-    text-shadow: -2px -2px 0 rgb(135, 132, 132),  /* Top-left shadow */
-    2px -2px 0  rgb(135, 132, 132),   /* Top-right shadow */
-    -2px 2px 0 rgb(135, 132, 132),   /* Bottom-left shadow */
-    2px 2px 0 rgb(135, 132, 132);   ;
-    text-align: center;
-    size: 400px;
-    font-size: 60px;
-    font-family: 'Nunito', sans-serif;
-    margin-bottom: 0;
-    margin-top: 60px;
-   
-}
-h2{
-     color: rgb(245, 189, 48);
-    size: 24px;
-    font-family: 'Nunito', sans-serif;
-
-        text-shadow: -2px -2px 0 rgb(135, 132, 132),  /* Top-left shadow */
-    2px -2px 0  rgb(135, 132, 132),   /* Top-right shadow */
-    -2px 2px 0 rgb(135, 132, 132),   /* Bottom-left shadow */
-    2px 2px 0 rgb(135, 132, 132);   ; 
-    text-align: center;
-}
-h3{
-    color: rgb(202, 137, 111);
-    size: 24px;
-    font-size: 28px;
-    font-family: 'Nunito', sans-serif;;
-}
- h4 {
-    color: darkslateblue;
-    text-align: center;
-    size: 20px;
-    font-family: 'Nunito', sans-serif;
-}
-p {
-    color: darkcyan;
-    text-align: center;
-    size: 16px;
-    font-family: 'Nunito', sans-serif;
-}
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 200px;
-
-}
-a {
-    text-align: center;
-    color: rgb(214, 137, 42);
-    font-family: 'nunito', sans-serif;
-    size: 14px;
-    margin: auto;
-    
-}
-
 
 body {
-    background-color: lightgoldenrodyellow;
+  font:
+    16px "Nunito",
+    sans-serif;
+  color: black;
+  background-color: lightgoldenrodyellow;
+  background-color: var(--body-background-color);
+  margin: 0;
+  padding: 1rem 0;
+  text-align: center;
+}
+header {
+  text-align: center;
+  background-color: var(--panel-background-color);
+  background-image: url("toto\ la\ momposina\ black\ and\ white.avif");
+  padding: 1.8rem;
+  margin: 0 0 1rem 0;
+  border-radius: 10px;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  text-align: center;
+}
+h1 {
+  margin: 3.75rem 0 2rem 0;
+  font-size: 3.75rem;
+  font-weight: 700;
+  color: var(--header-color-1);
+  text-shadow:
+    -2px -2px 0 rgb(135, 132, 132),
+    /* Top-left shadow */ 2px -2px 0 rgb(135, 132, 132),
+    /* Top-right shadow */ -2px 2px 0 rgb(135, 132, 132),
+    /* Bottom-left shadow */ 2px 2px 0 rgb(135, 132, 132);
+}
+h2 {
+  font-size: 1.75rem;
+  color: var(--header-color-2);
+  text-shadow:
+    -2px -2px 0 rgb(135, 132, 132),
+    /* Top-left shadow */ 2px -2px 0 rgb(135, 132, 132),
+    /* Top-right shadow */ -2px 2px 0 rgb(135, 132, 132),
+    /* Bottom-left shadow */ 2px 2px 0 rgb(135, 132, 132);
+}
+h3 {
+  font-size: 1.5rem;
+  color: var(--header-color-3);
+  padding: 1rem;
+  border-top: 5px double black;
+  border-bottom: 5px double black;
+  margin-bottom: 2rem;
+}
+h4 {
+  margin: 1rem 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--header-color-4);
+}
+p {
+  color: var(--p-color);
+  size: 1rem;
+}
+a {
+  color: var(--link-color);
+  font-size: 0.875rem;
+}
+.artist-info,
+.lyrics,
+.stream {
+  text-align: center;
+  background-color: var(--panel-background-color);
+  padding: 1rem 0.5rem;
+  margin: 0;
+  border-radius: 5px;
+  font-size: 18px;
+  font-size: 1.2rem;
+  p {
+    width: 90%;
+    margin: 1rem auto;
+  }
+}
+.artist-info {
+  img {
+    width: 80%;
+    height: auto;
+    margin: 1rem auto 0 auto;
+  }
+}
+.stream {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  h3 {
+    text-align: center;
+    padding: 1rem;
+    border-top: 5px double black;
+    border-bottom: 5px double black;
+    margin-bottom: 2rem;
+  }
+  div {
+    padding: 0;
+  }
+  figure {
+    margin: 0 0 2rem 0;
+    padding: 0 0 2rem 0;
+    padding: 0;
+    a {
+      display: block;
+    }
+  }
+  figcaption {
+    text-decoration: underline;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+  }
+  .img-container {
+    aspect-ratio: 1;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  /*
+  set the background color of the container to the same color as the iframe body
+  note: iframe height is 352px
+  */
+  .iframe-container {
+    border-radius: 1rem;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 80%;
+    height: auto;
+    min-height: 352px;
+    aspect-ratio: 1;
+    background-color: #9c1914;
+    background-color: var(--iframe-background-color);
+  }
+  iframe {
+    width: 100%;
+    height: 352px;
+    border: none;
+  }
 }
 footer {
-    text-align: center;
-    font-size: 12px;
-    color: greenrey;
-}
-.Column {
-    float: left;
-    width: 33.3%;
-    padding: 100px;
-    box-sizing: border-box;
-    text-align: center;
-    
-}
-.artist-info{
-    text-align: center;
-    background-color: lightyellow;
-    padding-top: 0%;
-    padding: 30px;
-    margin: 0p;
-    border-radius: 10px;
-    font-family: 'nunito', sans-serif;
-}
-.lyrics {
-    text-align: center;
-    background-color: lightyellow;
-    padding: 20px;
-    margin: 0px;
-    border-radius: 5px;
-    font-size: 18px;
-}
-.streaming-links {
-    text-align: center;
-    background-color: lightyellow;
-    padding: 20px;
-    margin: 0px;
-    border-radius: 5px;
-    font-size: 18px;
-}
-.song-info{
-    text-align: center;
-    padding: 0px;
-    margin: 0px;
-    border-radius: 5px;
-    font-size: 20px;
-    
-}
-img{
-    border-radius: 10px;
-    width: 250px;
-    height: auto;
-}
-footer{
-  p{
-    color: darkcyan;
-    text-align: center;
-    size: 20px;
-    font-family: 'Nunito', sans-serif;
-  }
+  margin-top: 2rem;
+  padding: 1rem 0;
+  border-top: 5px double black;
 }
